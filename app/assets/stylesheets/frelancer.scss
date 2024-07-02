@@ -111,7 +111,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 , a {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: 'Press Start 2P';
@@ -343,6 +343,7 @@ label {
 
 button {
   border-radius: 0;
+  
 }
 
 button:focus:not(:focus-visible) {
@@ -11002,6 +11003,7 @@ html {
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+ 
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
@@ -11010,9 +11012,11 @@ html {
   transition: all 0.2s ease-in-out;
   opacity: 0;
   background-color: rgba(26, 188, 156, 0.9);
+  cursor: url("/app/assets/images/portfolio/cursor-click.png");
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
+  
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;

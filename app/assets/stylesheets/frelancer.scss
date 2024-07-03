@@ -102,7 +102,14 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+.animate__animated.animate__pulse {
+  --animate-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.animate__animated.animate__shakeY {
+  --animate-duration: 1s;
+  animation-iteration-count: infinite;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -111,7 +118,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 , a {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1  {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: 'Press Start 2P';
@@ -247,7 +254,8 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration: none !important;
+  font-family: 'Press Start 2P';
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -343,7 +351,6 @@ label {
 
 button {
   border-radius: 0;
-  
 }
 
 button:focus:not(:focus-visible) {
@@ -359,6 +366,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  ;
 }
 
 button,
@@ -462,10 +470,7 @@ legend + * {
   padding: 0;
 }
 
-::file-selector-button {
-  font: inherit;
-  -webkit-appearance: button;
-}
+
 
 output {
   display: inline-block;
@@ -2811,6 +2816,7 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
+  
 }
 .btn-check + .btn:hover {
   color: var(--bs-btn-color);
@@ -2860,6 +2866,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #1abc9c;
   --bs-btn-disabled-border-color: #1abc9c;
+  cursor: url("/app/assets/images/portfolio/cursor-click.png");
 }
 
 .btn-secondary {
@@ -11012,7 +11019,6 @@ html {
   transition: all 0.2s ease-in-out;
   opacity: 0;
   background-color: rgba(26, 188, 156, 0.9);
-  cursor: url("/app/assets/images/portfolio/cursor-click.png");
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
